@@ -20,7 +20,7 @@ module.exports = class extends Text {
     constructor (p1) {
         try {
             super();
-            this.modname("linertext");
+            this.modname("linertxt");
             
 	    /* init config */
             
