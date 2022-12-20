@@ -38,9 +38,9 @@ module.exports = class extends Text {
             super.initDomConts();
             
 	    let liner = new ExtLine({
-                            size:      new ConfArg('100%','0.03rem'),
-			    //baseColor: '#5a5a96',
-			    visible:   false
+                            size:    new ConfArg('100%','0.03rem'),
+			    style:   { 'margin-top': '-0.03rem' },
+			    visible: false
 		        });
             this.child(liner);
         } catch (e) {
@@ -65,6 +65,10 @@ module.exports = class extends Text {
             console.error(e.stack);
             throw e;
         }
+    }
+
+    thickness () {
+        
     }
 }
 /* end of file */
